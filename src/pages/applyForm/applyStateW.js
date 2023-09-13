@@ -49,7 +49,6 @@ const ApplyStateW = () => {
 
     useEffect(() => {
         // 컴포넌트가 마운트되었을 때 목록을 가져오도록 API 호출
-        // callGetEmployeeAPI(dispatch);
         dispatch(callGetMarketStateWAPI());
     }, []);
 
