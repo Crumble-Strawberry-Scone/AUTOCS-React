@@ -24,7 +24,7 @@ const ApplyOk = () => {
 
                     <h3 style={{ marginBottom: "10px", marginTop: "10px", background: "white" }}>
                         신청이 완료되었습니다.<br/>
-                        감사합니다.
+                        감사합니다!
                     </h3>
 
 
