@@ -18,7 +18,6 @@ export const callApplyMarketAPI = ({ formData }) => {
         method: 'POST',
         headers: {
             "Accept": "*/*",
-            //"Access-Control-Allow-Origin": "*"
         },
         body: formData,
     })
