@@ -60,7 +60,7 @@ const FindPwdOk = () => {
                     <div className="separator" style={{width: "60%"}}></div>
 
                     <h4 style={{ marginBottom: "10px", marginTop: "10px", background: "white" }}>인증번호</h4>
-                    <input className="lo" type="text" id="no" name="no" value={no} onChange={handleNoChange} required />
+                    <input className="lo" type="password" id="no" name="no" value={no} onChange={handleNoChange} required />
 
                     <button type="button" className="guideId" onClick={handleGo}>
                         확인
