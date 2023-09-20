@@ -10,7 +10,6 @@ const GuideId = () => {
     if (!findIdData) {
         return <div>Loading...</div>;
     }else if (typeof findIdData.member === 'string') {
-        const test = JSON.parse(findIdData.member);
     } else {
         console.error('findIdData.member is not a string');
     }
