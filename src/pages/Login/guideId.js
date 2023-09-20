@@ -9,11 +9,11 @@ const GuideId = () => {
 
     if (!findIdData) {
         return <div>Loading...</div>;
+    }else if (typeof findIdData.member === 'string') {
+        const test = JSON.parse(findIdData.member);
+    } else {
+        console.error('findIdData.member is not a string');
     }
-    //console.log("findIdData>>>>>>>>>>" + findIdData)
-    const test = JSON.parse(JSON.stringify(findIdData.member));
-    //console.log("멤버2>>>>>>>>>>" , JSON.parse(test).id);
-    const userId = JSON.parse(test).id;
 
 
 
@@ -35,7 +35,7 @@ const GuideId = () => {
                     <h3 style={{ marginBottom: '10px', marginTop: '10px', background: 'white' }}>
                         아이디 안내
                     </h3>
-                    <p>찾은 아이디: {findIdData != undefined ? userId : ''}</p>
+                    <p>찾은 아이디: {findIdData != undefined ? findIdData.member.id : ''}</p>
 
                     <Link to="/login" type="button" className="ok">
                         로그인하러 가기
